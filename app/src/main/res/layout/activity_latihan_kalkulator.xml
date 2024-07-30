@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LatihanKalkulator">
+
+  <TextView
+      android:id="@+id/txt1"
+      android:layout_width="wrap_content"
+      android:layout_height="50dp"
+      android:padding="3dp"
+      android:text="@string/tv1"
+      android:textSize="30sp"
+      android:labelFor="@id/input1"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.122"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.083"
+      tools:ignore="TextSizeCheck" />
+
+  <EditText
+      android:id="@+id/input1"
+      android:layout_width="wrap_content"
+      android:layout_height="50sp"
+      android:ems="10"
+      android:importantForAutofill="no"
+      android:inputType="number"
+      android:hint="@string/input"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.92"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.082"
+      tools:ignore="LabelFor" />
+
+  <TextView
+      android:id="@+id/txt2"
+      android:layout_width="wrap_content"
+      android:layout_height="50dp"
+      android:labelFor="@id/input2"
+      android:padding="3dp"
+      android:text="@string/tv2"
+      android:textSize="30sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.121"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.239"
+      tools:ignore="TextSizeCheck" />
+
+  <EditText
+      android:id="@+id/input2"
+      android:layout_width="wrap_content"
+      android:layout_height="50sp"
+      android:ems="10"
+      android:hint="@string/input"
+      android:importantForAutofill="no"
+      android:inputType="number"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.92"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.24"
+      tools:ignore="LabelFor" />
+
+  <Button
+      android:id="@+id/btn1"
+      android:layout_width="70dp"
+      android:layout_height="55dp"
+      android:text="+"
+      android:textSize="24sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.152"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.394"
+      tools:ignore="HardcodedText" />
+
+  <Button
+      android:id="@+id/btn2"
+      android:layout_width="70dp"
+      android:layout_height="55dp"
+      android:text="-"
+      android:textSize="24sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.407"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.394" />
+
+  <Button
+      android:id="@+id/btn3"
+      android:layout_width="70dp"
+      android:layout_height="55dp"
+      android:text="*"
+      android:textSize="24sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.668"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.394" />
+
+  <Button
+      android:id="@+id/btn4"
+      android:layout_width="70dp"
+      android:layout_height="55dp"
+      android:text="/"
+      android:textSize="24sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.92"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.394" />
+
+  <Button
+      android:id="@+id/btn5"
+      android:layout_width="80dp"
+      android:layout_height="60dp"
+      android:text="="
+      android:textSize="24sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.499" />
+
+  <TextView
+      android:id="@+id/txthasil"
+      android:layout_width="375dp"
+      android:layout_height="74dp"
+      android:text="@string/hasil"
+      android:textSize="40sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.444"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.61"
+      tools:ignore="TextSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

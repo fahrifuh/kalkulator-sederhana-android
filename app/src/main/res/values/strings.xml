@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Test</string>
+    <string name="tv1">Angka 1</string>
+    <string name="tv2">Angka 2</string>
+    <string name="input">Input angka</string>
+    <string name="hasil">Hasil:</string>
+</resources>
